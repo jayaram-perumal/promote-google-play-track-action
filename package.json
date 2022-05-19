@@ -1,0 +1,25 @@
+{
+  "name": "promote-google-play-track-action",
+  "version": "1.0.0",
+  "description": "A Github action that can be used to promote the track of an app release on the Google Play Store",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -m -o dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Vincit-Group/promote-google-play-track-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Vincit-Group/promote-google-play-track-action/issues"
+  },
+  "homepage": "https://github.com/The-Vincit-Group/promote-google-play-track-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.8.2",
+    "@actions/github": "^5.0.3",
+    "googleapis": "^100.0.0"
+  }
+}
