@@ -4,13 +4,17 @@
   "description": "A Github action that can be used to promote the track of an app release on the Google Play Store",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build src/index.js -m -o dist/"
+    "build": "ncc build src/main.js --license licenses.txt"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/The-Vincit-Group/promote-google-play-track-action.git"
+    "url": "git+https://github.com/jayaram-perumal/promote-google-play-track-action.git"
   },
-  "keywords": [],
+  "keywords": [
+    "actions",
+    "node",
+    "setup"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,6 +24,6 @@
   "dependencies": {
     "@actions/core": "^1.9.1",
     "@actions/github": "^5.0.3",
-    "googleapis": "^100.0.0"
+    "googleapis": "^131.0.0"
   }
 }

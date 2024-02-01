@@ -1,10 +1,12 @@
-name: 'Promote a Google Play App from one track to another'
-description: "Promote a Google Play App from one track to another"
-author: 'The Vincit Group'
+name: Promote Track
+description: Promote a Google Play App from one track to another
 inputs:
+  serviceAccountJson:
+    description: "Path of the service account json used to for authorization"
+    required: false
   serviceAccountJsonPlainText:
     description: "The plain text of the service account json used to for authorization"
-    required: true
+    required: false
   packageName:
     description: "The package name of the app you are promoting"
     required: true
@@ -14,10 +16,6 @@ inputs:
   toTrack:
     description: "The track you are promoting to"
     required: true
-  testOnly:
-    description: "For testing, do not perform commit after promoting"
-    default: 'false'
-    required: false
 runs:
-  using: 'node12'
-  main: 'src/index.js'
+  using: 'node20'
+  main: 'dist/index.js'
