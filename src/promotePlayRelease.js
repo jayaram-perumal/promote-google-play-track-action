@@ -89,11 +89,11 @@ async function getGoogleAuthClient() {
 }
 
 async function saveServiceAccountJsonFile(serviceAccountJsonPlainText) {
-    debug('Saving service account JSON for temporary use');
-    writeFileSync(serviceAccountJsonPlainTextFile, serviceAccountJsonPlainText, {
-      encoding: 'utf8'
-    });
-    exportVariable("GOOGLE_APPLICATION_CREDENTIALS", serviceAccountJsonPlainTextFile);
+    // debug('Saving service account JSON for temporary use');
+    // writeFileSync(serviceAccountJsonPlainTextFile, serviceAccountJsonPlainText, {
+    //   encoding: 'utf8'
+    // });
+    exportVariable("GOOGLE_APPLICATION_CREDENTIALS", serviceAccountJsonPlainText);
 }
 
 async function getCurrentTrackRelease(androidPublisher, googleAuthClient, appEdit, packageName, fromTrack){
